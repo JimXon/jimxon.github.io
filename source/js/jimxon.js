@@ -36,7 +36,7 @@ function addNewWindowsOpenForA(element) {
 function ChangeHtmlHeight() {
     HeightDifference = document.documentElement.clientHeight - document.body.clientHeight;
     if (HeightDifference > 0) {
-        EditHeight = $(".jx-main").height() + HeightDifference;
+        EditHeight = $(".jx-main").height() + HeightDifference + 10;
         $(".jx-main").css("min-height", EditHeight + "px");
     }
 }

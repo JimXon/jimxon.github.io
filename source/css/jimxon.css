@@ -34,9 +34,6 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
 .nav-pills>li+li {
 	margin-left: 0;
 }
-.jx-search-group .input-group-btn {
-	width: 1% !important;
-}
 .jx-search-group .input-group-btn>.btn:focus {
 	outline: none;
 }
