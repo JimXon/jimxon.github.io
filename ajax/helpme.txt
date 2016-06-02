@@ -1,0 +1,9 @@
+﻿<table class="table">
+<thead><tr><th>Command</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td>helpme</td><td>真正的帮助菜单</td></tr>
+<tr><td>ua</td><td>检测浏览器UA，屏幕参数</td></tr>
+<tr><td>fanqiang</td><td>打开翻墙工具箱</td></tr>
+<tr><td>all</td><td>显示所有网址</td></tr>
+<tr><td>1 / 2 / 3</td><td>强制变成一栏、两栏、三栏，仅电脑屏幕有效</td></tr>
+</tbody></table>
