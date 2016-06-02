@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	font-family: 微软雅黑, Microsoft Yahei;
+}
+body {
+	background-color: #E9EAED;
+}
+body, h1, h2, h3, h4, h5, h6, ol, ul, li {
+	margin: 0;
+	padding: 0;
+}
+ol, ul {
+	list-style: none;
+}
+a, a:link, a:visited, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: none
+}
+.container {
+/*	max-width: 970px;*/
+}
+/* rewrite bootstrap */
+.nav-pills>li>a {
+	border-radius: 0;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	background-color: #53AAEE;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: #D0E7FA;
+}
+.nav-pills>li+li {
+	margin-left: 0;
+}
+.jx-search-group .input-group-btn {
+	width: 1% !important;
+}
+.jx-search-group .input-group-btn>.btn:focus {
+	outline: none;
+}
+.jx-header .dropdown-menu .divider {
+	margin: 5px 0;
+}
+/* <a> color */
+.jx-navbar a {
+	color: #337AB7;
+}
+.jx-navbar a:hover, .jx-navbar a:focus {
+	color: #23527C;
+}
+.jx-main .jx-url-list a {
+	color: #337AB7;
+}
+.jx-main .jx-url-list a:hover, .jx-main .jx-url-list a:focus {
+	color: #23527C;
+}
+/* my css */
+.jx-header {
+	padding-bottom: 20px;
+	background-color: #00A1F1;
+}
+.jx-header-logo {
+	margin-top: 10px;
+}
+.jx-header-menu {
+	margin-top: 15px;
+}
+.jx-navbar {
+	background-color: #ABD6F7;
+	border-bottom: 1px solid #53AAEE;
+}
+.jx-main {
+	min-height: 600px;
+}
+.jx-main>.container {
+	background-color: #FFF;
+	padding-bottom: 30px;
+}
+.jx-footer {
+	background: #272A30;
+	min-height: 160px;
+}
+.jx-url-group, .jx-search-group {
+	margin-top: 15px;
+}
+.jx-url-group h2, .jx-search-group h2 {
+	font-size: 20px;
+	height: 26px;
+	color: #103480;
+}
+.jx-url-group h2 {
+	border-bottom: 2px solid #E5E5E5;
+}
+.jx-url-group h2 .title {
+	border-bottom: 2px solid #3DA9F7;
+	float: left;
+	display: block;
+	min-height: 26px;
+}
+.jx-url-group h3 {
+	font-size: 16px;
+	color: #888;
+	margin-top: 5px;
+	padding-left: 3px;
+}
+.jx-url-list {
+	margin-top: 5px;
+	margin-bottom: -5px;
+}
+.jx-url-list:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.jx-url-list>li {
+	float: left;
+	display: block;
+	margin: 0 5px 5px 0;
+}
+.jx-url-list>li>a {
+	display: block;
+	border: #BBB solid 1px;
+	margin: 0;
+	padding: 2px 5px;
+	font-size: 14px;
+}
+.jx-url-list .newline {
+	clear: both;
+	display: table;
+	margin: 0;
+	padding: 0;
+	width: 0;
+	height: 0;
+}
+.modal span.red {
+	color: #f22222;
+	display: inline-block;
+}
+
+@media (max-width: 479px) {
+.jx-navbar .nav>li>a {
+	padding: 8px 12px;
+}
+}
+
+@media (min-width: 480px) {
+.jx-url-group h2, .jx-search-group h2 {
+	font-size: 22px;
+	height: 28px;
+}
+.jx-url-group h2 .title {
+	min-height: 28px;
+}
+.jx-url-group h3 {
+	font-size: 17px;
+}
+.jx-url-list>li>a {
+	font-size: 15px;
+}
+}
+
+@media (min-width: 768px) {
+.jx-main>.container {
+	padding-bottom: 50px;
+}
+.jx-url-group, .jx-search-group {
+	margin-top: 20px;
+}
+.jx-url-group h2, .jx-search-group h2 {
+	font-size: 24px;
+	height: 32px;
+}
+.jx-url-group h2 .title {
+	min-height: 32px;
+}
+.jx-url-group h3 {
+	font-size: 18px;
+	margin-top: 6px;
+}
+.jx-url-list {
+	margin-top: 6px;
+	margin-bottom: -6px;
+}
+.jx-url-list>li>a {
+	font-size: 15px;
+}
+}
+
+@media (min-width: 992px) {
+.jx-url-group, .jx-search-group {
+	margin-top: 25px;
+}
+}
+/* 调试模式 */
+.test-preview-mode .jx-navbar .nav.nav-pills {
+	background-color: rgba(0,0,0,.1);
+}
+.test-preview-mode .jx-url-group, .test-preview-mode .jx-search-group {
+	background-color: rgba(0,0,0,.1);
+}
+.test-preview-mode .jx-url-list {
+	background-color: rgba(0,0,0,.2);
+}
+.test-preview-mode .jx-url-list>li>a {
+	border: #00F solid 1px;
+}
+.test-preview-mode .jx-main .jx-url-list a {
+	color: #000;
+}
+/* 淡进淡出效果 */
+.fade-effect .jx-navbar a {
+	transition: all .25s linear;
+}
