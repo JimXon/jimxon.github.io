@@ -16,8 +16,18 @@ ol, ul {
 }
 a, a:link, a:visited, a:hover, a:active, a:focus {
 	text-decoration: none;
-	outline: none
+	outline: none !important;
 }
 button:focus {
 	outline: none !important;
+}
+/* rewrite bootstrap */
+.nav-pills>li>a {
+	border-radius: 0 !important;
+}
+.nav-pills>li+li {
+	margin-left: 0;
+}
+.dropdown-menu .divider {
+	margin: 5px 0;
 }

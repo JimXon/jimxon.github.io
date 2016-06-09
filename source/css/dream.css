@@ -4,22 +4,6 @@
 .container {
 /*	max-width: 970px;*/
 }
-/* rewrite bootstrap */
-.nav-pills>li>a {
-	border-radius: 0;
-}
-.nav-pills>li+li {
-	margin-left: 0;
-}
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-	background-color: #53AAEE;
-}
-.nav>li>a:focus, .nav>li>a:hover {
-	background-color: #D0E7FA;
-}
-.jx-header .dropdown-menu .divider {
-	margin: 5px 0;
-}
 /* <a> color */
 .jx-navbar a {
 	color: #337AB7;
@@ -47,6 +31,12 @@
 .jx-navbar {
 	background-color: #ABD6F7;
 	border-bottom: 1px solid #53AAEE;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	background-color: #53AAEE;
+}
+.nav-pills>li>a:focus, .nav-pills>li>a:hover {
+	background-color: #D0E7FA;
 }
 .jx-main {
 	min-height: 600px;
@@ -111,6 +101,9 @@
 	width: 0;
 	height: 0;
 }
+.jx-search-group .search-input-box {
+	margin-bottom: 5px;
+}
 .modal span.red {
 	color: #f22222;
 	display: inline-block;
@@ -154,11 +147,6 @@
 }
 .jx-url-group h3 {
 	font-size: 18px;
-	margin-top: 6px;
-}
-.jx-url-list {
-	margin-top: 6px;
-	margin-bottom: -6px;
 }
 .jx-url-list>li>a {
 	font-size: 15px;

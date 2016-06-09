@@ -14,7 +14,7 @@
 <link href="source/css/jimxon.css" rel="stylesheet">
 <style>
 .li {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 </style>
 </head>
@@ -24,10 +24,23 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-      <div class="li">
+      <div class="li hidden-xs">
         <form action="https://www.baidu.com/s" method="get" target="_blank">
-          <div class="input-group input-group-lg col-xs-12">
+          <div class="input-group input-group-lg">
             <input type="text" class="form-control" name="wd" autocomplete="off" value="" placeholder="百度一下，你就知道">
+            <div class="input-group-btn">
+              <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
+              <button type="reset" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="li visible-xs-block">
+        <form action="https://m.baidu.com/s" method="get" target="_blank">
+          <div class="input-group input-group-lg">
+            <input type="text" class="form-control" name="wd" autocomplete="off" value="" placeholder="百度一下【简版】">
+            <input type="hidden" name="pu" value="sz@1321_1001">
+            <input type="hidden" name="pu" value="sz@1330_640" data-note="塞班版" disabled>
             <div class="input-group-btn">
               <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
               <button type="reset" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
