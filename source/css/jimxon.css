@@ -18,6 +18,10 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
 	text-decoration: none;
 	outline: none !important;
 }
+::selection {
+	background: #50C7EB;
+	color: #FFF;
+}
 button:focus {
 	outline: none !important;
 }
