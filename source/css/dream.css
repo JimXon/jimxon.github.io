@@ -73,8 +73,7 @@
 	padding-left: 3px;
 }
 .jx-url-list {
-	margin-top: 5px;
-	margin-bottom: -5px;
+	margin: 5px -5px -5px 0;
 }
 .jx-url-list:after {
 	content: "";

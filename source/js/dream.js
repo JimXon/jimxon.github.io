@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
     addNewWindowsOpenForA(".jx-main");
-    ChangeHtmlHeight();
+    BootstrapTooltip(".jx-main");
     // 模态框相关
 	$("#modal").on("hidden.bs.modal", function () {
         changeModalWord("null");
@@ -18,23 +18,10 @@ $(document).ready(function () {
     
 });
 
-$(window).resize(function () {
-    ChangeHtmlHeight();
-});
-
 //////// some function ////////
-////// 某元素下的所有a标签，批量添加新窗口打开属性
-function addNewWindowsOpenForA(element) {
-    $(element).find("a").attr("target", "_blank");
+////// 某元素下的所有a标签，批量添加Bootstrap的tooltip插件参数
+function BootstrapTooltip(element) {
     $(element).find("a[title]").data("placement", "bottom").tooltip();
-}
-////// 高度调整，免得有些1080P或更大屏幕下面不到底
-function ChangeHtmlHeight() {
-    HeightDifference = document.documentElement.clientHeight - document.body.clientHeight;
-    if (HeightDifference > 0) {
-        EditHeight = $(".jx-main").height() + HeightDifference + 10;
-        $(".jx-main").css("min-height", EditHeight + "px");
-    }
 }
 function showAllUrl() {
     $(".jx-main").find("li.hidden").removeClass("hidden");
