@@ -7,10 +7,6 @@ $(document).ready(function () {
     });
     // 自动高度
     ChangeHtmlHeight(".auto-height");
-    // 个性化滚动条
-    $("body").niceScroll({
-        cursorcolor: "#3A5795", cursorwidth: "10px", cursorborder: "1px solid rgba(255,255,255,0.33)", cursorborderradius: "5px", cursoropacitymax: 1, touchbehavior: false,
-    });
 });
 
 $(window).resize(function () {
@@ -23,7 +19,7 @@ $(window).resize(function () {
 function ChangeHtmlHeight(element) {
     HeightDifference = document.documentElement.clientHeight - document.body.clientHeight;
     if (HeightDifference > 0) {
-        EditHeight = $(element).height() + HeightDifference + 1;
+        EditHeight = $(element).height() + HeightDifference + 0;
         $(element).css("min-height", EditHeight + "px");
     }
 }

@@ -4,18 +4,21 @@ $(document).ready(function () {
     addNewWindowsOpenForA(".jx-main");
     BootstrapTooltip(".jx-main");
     // 模态框相关
-	$("#modal").on("hidden.bs.modal", function () {
+    $("#modal").on("hidden.bs.modal", function () {
         changeModalWord("null");
-	});
-	$("#modal-UA").on("show.bs.modal", function () {
-	    checkUA();
-	});
-	$("#modal-UA").on("hidden.bs.modal", function () {
-	    $("#modal-UA .display").text("null");
-	});
-	clickMenuOrBtn();
-	runCmd("#form-cmd");
-    
+    });
+    $("#modal-UA").on("show.bs.modal", function () {
+        checkUA();
+    });
+    $("#modal-UA").on("hidden.bs.modal", function () {
+        $("#modal-UA .display").text("null");
+    });
+    clickMenuOrBtn();
+    runCmd("#form-cmd");
+    // 个性化滚动条
+    $("body").niceScroll({
+        cursorcolor: "#3A5795", cursorwidth: "10px", cursorborder: "1px solid rgba(255,255,255,0.33)", cursorborderradius: "5px", cursoropacitymax: 1, touchbehavior: false,
+    });
 });
 
 //////// some function ////////
