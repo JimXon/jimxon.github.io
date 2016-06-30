@@ -5,16 +5,25 @@
 	font-family: 微软雅黑, Microsoft Yahei, arial;
 }
 body {
-	background-color: #E9EAED;
+	background-color: #e9eaed;
 }
-body, h1, h2, h3, h4, h5, h6, ol, ul, li {
+body,
+ol,
+ul,
+li {
 	margin: 0;
 	padding: 0;
 }
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
-a, a:link, a:visited, a:hover, a:active, a:focus {
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
 	text-decoration: none;
 	outline: none !important;
 }
@@ -25,36 +34,85 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
 button:focus {
 	outline: none !important;
 }
+.container {
+/*	max-width: 970px;*/
+}
 /* rewrite bootstrap */
-.nav-pills>li>a {
-	border-radius: 0 !important;
-}
-.nav-pills>li+li {
-	margin-left: 0;
-}
 .dropdown-menu .divider {
 	margin: 5px 0;
 }
 
-/* 伪Microsoft Edge滚动条样式 */
+/* 伪 Microsoft Edge 滚动条样式 */
 ::-webkit-scrollbar {
  width: 10px;
- background-color: #E9EAED;
+ background-color: #e9eaed;
 }
 ::-webkit-scrollbar:hover {
- background-color: #E6E6E6;
+ background-color: #e6e6e6;
 }
 ::-webkit-scrollbar-thumb {
  min-height: 50px;
  min-width: 10px;
  border-radius: 0px;
- background-color: #B9B9B9;
+ background-color: #b9b9b9;
 }
 ::-webkit-scrollbar-thumb:hover {
  min-height: 5px;
  min-width: 5px;
- background-color: #B9B9B9;
+ background-color: #b9b9b9;
 }
 ::-webkit-scrollbar-thumb:active {
- background-color: #5C5C5C;
+ background-color: #5c5c5c;
+}
+/* page/.html 共用样式 */
+.jx-header {
+	padding-bottom: 15px;
+	background-color: #00adef;
+}
+.jx-header-logo,
+.jx-header-menu,
+.jx-header-btn {
+	margin-top: 10px;
+}
+.jx-navbar {
+	background-color: #abd6f7;
+	border-bottom: 1px solid #53aaee;
+}
+.nav-pills>li+li {
+	margin-left: 0;
+}
+.nav-pills>li>a {
+	border-radius: 0 !important;
+}
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+	background-color: #53aaee;
+}
+.nav-pills>li>a:focus,
+.nav-pills>li>a:hover {
+	background-color: #d0e7fa;
+}
+.jx-main {
+	min-height: 1px;
+}
+.jx-main>.container {
+	background-color: #fff;
+	min-height: 100px;
+	padding-bottom: 30px;
+}
+
+@media (max-width: 479px) {
+.jx-navbar .nav>li>a {
+	padding: 8px 12px;
+}
+.dropdown-menu>li>a {
+	padding: 6px 20px;
+}
+}
+
+@media (min-width: 768px) {
+.jx-main>.container {
+	padding-bottom: 50px;
+}
 }

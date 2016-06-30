@@ -1,67 +1,45 @@
 @charset "utf-8";
 /* CSS Document */
 
-.container {
-/*	max-width: 970px;*/
-}
 /* <a> color */
 .jx-navbar a {
-	color: #337AB7;
+	color: #337ab7;
 }
-.jx-navbar a:hover, .jx-navbar a:focus {
-	color: #23527C;
+.jx-navbar a:hover,
+.jx-navbar a:focus {
+	color: #23527c;
 }
 .jx-main .jx-url-list a {
-	color: #337AB7;
+	color: #337ab7;
 }
-.jx-main .jx-url-list a:hover, .jx-main .jx-url-list a:focus {
-	color: #23527C;
+.jx-main .jx-url-list a:hover,
+.jx-main .jx-url-list a:focus {
+	color: #23527c;
 }
 /* my css */
 .jx-header {
-	padding-bottom: 20px;
-	background-color: #00ADEF;
-}
-.jx-header-logo {
-	margin-top: 10px;
-}
-.jx-header-menu {
-	margin-top: 15px;
-}
-.jx-navbar {
-	background-color: #ABD6F7;
-	border-bottom: 1px solid #53AAEE;
-}
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-	background-color: #53AAEE;
-}
-.nav-pills>li>a:focus, .nav-pills>li>a:hover {
-	background-color: #D0E7FA;
-}
-.jx-main {
-	min-height: 600px;
-}
-.jx-main>.container {
-	background-color: #FFF;
-	padding-bottom: 30px;
 }
 .jx-footer {
-	background: #272A30;
+	background: #272a30;
 	min-height: 160px;
 }
-.jx-url-group, .jx-search-group {
+.jx-url-group,
+.jx-search-group {
 	margin-top: 15px;
 }
-.jx-url-group h2, .jx-search-group h2 {
+.jx-url-group h2,
+.jx-search-group h2 {
+	margin: 0;
+	padding: 0;
 	font-size: 20px;
 	height: 26px;
 	color: #103480;
 }
 .jx-url-group h2 {
-	border-bottom: 2px solid #E5E5E5;
+	border-bottom: 2px solid #e5e5e5;
 }
 .jx-url-group h2 .title {
-	border-bottom: 2px solid #3DA9F7;
+	border-bottom: 2px solid #3da9f7;
 	float: left;
 	display: block;
 	min-height: 26px;
@@ -69,6 +47,8 @@
 .jx-url-group h3 {
 	font-size: 16px;
 	color: #888;
+	margin: 0;
+	padding: 0;
 	margin-top: 5px;
 	padding-left: 3px;
 }
@@ -87,7 +67,7 @@
 }
 .jx-url-list>li>a {
 	display: block;
-	border: #BBB solid 1px;
+	border: #bbb solid 1px;
 	margin: 0;
 	padding: 2px 5px;
 	font-size: 14px;
@@ -109,13 +89,11 @@
 }
 
 @media (max-width: 479px) {
-.jx-navbar .nav>li>a {
-	padding: 8px 12px;
-}
 }
 
 @media (min-width: 480px) {
-.jx-url-group h2, .jx-search-group h2 {
+.jx-url-group h2,
+.jx-search-group h2 {
 	font-size: 22px;
 	height: 28px;
 }
@@ -131,13 +109,12 @@
 }
 
 @media (min-width: 768px) {
-.jx-main>.container {
-	padding-bottom: 50px;
-}
-.jx-url-group, .jx-search-group {
+.jx-url-group,
+.jx-search-group {
 	margin-top: 20px;
 }
-.jx-url-group h2, .jx-search-group h2 {
+.jx-url-group h2,
+.jx-search-group h2 {
 	font-size: 24px;
 	height: 32px;
 }
@@ -153,7 +130,8 @@
 }
 
 @media (min-width: 992px) {
-.jx-url-group, .jx-search-group {
+.jx-url-group,
+.jx-search-group {
 	margin-top: 25px;
 }
 }
@@ -161,7 +139,8 @@
 .test-preview-mode .jx-navbar .nav.nav-pills {
 	background-color: rgba(0,0,0,.1);
 }
-.test-preview-mode .jx-url-group, .test-preview-mode .jx-search-group {
+.test-preview-mode .jx-url-group,
+.test-preview-mode .jx-search-group {
 	background-color: rgba(0,0,0,.1);
 }
 .test-preview-mode .jx-url-list {

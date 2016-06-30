@@ -1,8 +1,8 @@
 // JavaScript Document
 
 $(document).ready(function () {
-    addNewWindowsOpenForA(".jx-main");
-    BootstrapTooltip(".jx-main");
+    addNewWindowsOpenForA(".jx-url-list");
+    BootstrapTooltip(".jx-url-list");
     // 模态框相关
     $("#modal").on("hidden.bs.modal", function () {
         changeModalWord("null");
