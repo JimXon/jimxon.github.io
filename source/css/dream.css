@@ -141,10 +141,11 @@
 }
 .test-preview-mode .jx-url-group,
 .test-preview-mode .jx-search-group {
-	background-color: rgba(0,0,0,.1);
+	background-color: rgba(0,0,0,.3);
 }
-.test-preview-mode .jx-url-list {
-	background-color: rgba(0,0,0,.2);
+.test-preview-mode .jx-url-group h2,
+.test-preview-mode .jx-url-group h3 {
+	background-color: rgba(255,255,255,0.7);
 }
 .test-preview-mode .jx-url-list>li>a {
 	border: #00F solid 1px;

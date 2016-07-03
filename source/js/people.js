@@ -31,11 +31,16 @@ function clickMenuOrBtn() {
         afterClickLoadingPicBtn();
     });
     $("#menu-test-btn-1").click(function () {
-        autoFillUrlSuffix("fb", "photos");
+        autoFillUrlSuffix("fb", "/photos");
     });
     $("#menu-test-btn-2").click(function () {
     });
     $("#menu-test-btn-3").click(function () {
+        // 刷新单张图片，仅调试用
+        $("img").click(function () {
+            var tempSrc = $(this).attr("src");
+            $(this).attr("src", tempSrc + "?a=");
+        });
     });
 }
 // 组合图片地址
@@ -43,7 +48,8 @@ function CombinationProfilePicUrl(img, how) {
     var urlPrefix = $("#profilePicPool").text();
     $(img).each(function () {
         var imgName = $(this).data("pic");
-        if (typeof (imgName) == "undefined") {
+        if (typeof (imgName) == "undefined" || imgName == "") {
+            // 不存在或为空
             return;
         }
         var imgUrl = urlPrefix + imgName;

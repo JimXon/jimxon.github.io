@@ -10,7 +10,7 @@
 }
 .jx-group-title h2 {
 	margin-top: 25px;
-	margin-bottom: 0;
+	margin-bottom: 5px;
 }
 .jx-group-title h2>small {
 	display: inline-block;
@@ -28,9 +28,26 @@
 .jx-people-left {
 	padding-right: 10px;
 }
-.jx-people-left img {
-	display: block;
+.img-box {
 	width: 100px;
+	height: 100px;
+	overflow: hidden;
+}
+.img-box img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.img-box .mask-layer {
+	position: relative;
+	top: 0;
+	height: 100px;
+	color: #fff;
+	background-color: rgba(0,0,0,.5);
+	transition: top .2s ease-in-out;
+}
+.img-box:hover .mask-layer {
+	top: -20px;
 }
 .jx-people-right {
 	width: 666px;
@@ -41,6 +58,7 @@
 }
 .jx-people-right p {
 	margin: 0;
+	line-height: 19px;
 }
 .jx-people-right .birthday:before {
 	content: "生日：";
@@ -49,17 +67,17 @@
 	content: "来自：";
 }
 .jx-people-bottom {
-	padding-bottom: 1px;
+	padding-top: 5px;
 }
 .jx-people-bottom:after {
-	content: "";
+	content: " ";
 	clear: both;
 	display: table;
 }
 .jx-people-bottom li {
 	display: block;
 	float: left;
-	margin: 5px 5px 0 0;
+	margin: 0 5px 5px  0;
 }
 .jx-people-bottom a {
 	display: block;
@@ -79,7 +97,8 @@
 	width: 20px;
 	height: 20px;
 	background-image: url(../img/icon.png);
-	background-size: 600%;
+	background-repeat: no-repeat;
+	background-size: 1000%;
 }
 .jx-people-bottom .fb .icon {
 	background-position: -20px 0;
@@ -90,6 +109,19 @@
 .jx-people-bottom .yt .icon {
 	background-position: -60px 0;
 }
+.jx-people-bottom .wb .icon {
+	background-position: -80px 0;
+}
+.jx-people-bottom .mp .icon {
+	background-position: -100px 0;
+}
+.jx-people-bottom .tx .icon {
+	background-position: -120px 0;
+}
+.jx-people-bottom .yk .icon {
+	background-position: -140px 0;
+}
+
 
 /* 不同的分辨率清除浮动 */
 @media (max-width: 991px) and (min-width: 768px) {
