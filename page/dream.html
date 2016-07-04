@@ -20,12 +20,13 @@
 <div class="jx-header">
   <div class="container">
     <div class="row">
-      <div class="jx-header-logo col-sm-6">
-        <img class="img-responsive" src="../source/img/dream-navi.png" alt="梦想导航" data-font="华康翩翩体">
+      <div class="jx-header-logo col-sm-6"> 
+        <!--[if lte IE 8]><img class="img-responsive" src="../source/img/dream-navi.png" alt="梦想导航"><![endif]-->
+        <embed src="../source/img/dream-navi.svg" type="image/svg+xml" id="logo"> 
       </div>
       <div class="jx-header-menu col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
-      <div class="hidden-xs" style="height:30px;"></div>
-      <form id="form-cmd" action="javascript:;">
+        <div class="hidden-xs" style="height:30px;"></div>
+        <form id="form-cmd" action="javascript:;">
           <div class="input-group">
             <input type="text" class="form-control" id="input-cmd" placeholder="Mini Command Line" autocomplete="off" value="" tabindex="1">
             <span class="sr-only">获取帮助，请输入"helpme"，这才是真正的帮助，看看源码就找到了，对吧？</span>
