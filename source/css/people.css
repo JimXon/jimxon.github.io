@@ -106,20 +106,23 @@
 .jx-people-bottom .ig .icon {
 	background-position: -40px 0;
 }
-.jx-people-bottom .yt .icon {
+.jx-people-bottom .tw .icon {
 	background-position: -60px 0;
 }
-.jx-people-bottom .wb .icon {
+.jx-people-bottom .yt .icon {
 	background-position: -80px 0;
 }
-.jx-people-bottom .mp .icon {
+.jx-people-bottom .wb .icon {
 	background-position: -100px 0;
 }
-.jx-people-bottom .tx .icon {
+.jx-people-bottom .mp .icon {
 	background-position: -120px 0;
 }
-.jx-people-bottom .yk .icon {
+.jx-people-bottom .tx .icon {
 	background-position: -140px 0;
+}
+.jx-people-bottom .yk .icon {
+	background-position: -160px 0;
 }
 
 

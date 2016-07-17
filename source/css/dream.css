@@ -72,14 +72,6 @@
 	padding: 2px 5px;
 	font-size: 14px;
 }
-.jx-url-list .newline {
-	clear: both;
-	display: table;
-	margin: 0;
-	padding: 0;
-	width: 0;
-	height: 0;
-}
 .jx-search-group .search-input-box {
 	margin-bottom: 5px;
 }

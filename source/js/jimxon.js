@@ -17,8 +17,12 @@ $(window).resize(function () {
 //////// some function ////////
 ////// 高度调整，免得有些1080P或更大屏幕下面留空白
 function ChangeHtmlHeight(element) {
-    HeightDifference = document.documentElement.clientHeight - document.body.clientHeight;
-    EditHeight = $(element).height() + HeightDifference + 8;
+    var addHeight = $(element).data("addheight");
+    if (typeof (addHeight) == "undefined") {
+        addHeight = 8;
+    }
+    var HeightDifference = document.documentElement.clientHeight - document.body.clientHeight;
+    var EditHeight = $(element).height() + HeightDifference + addHeight;
     $(element).css("min-height", EditHeight + "px");
 }
 ////// 某元素下的所有a标签，批量添加新窗口打开属性
