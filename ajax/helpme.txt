@@ -1,4 +1,4 @@
-﻿<table class="table">
+<table class="table">
 <thead><tr><th>Command</th><th>Description</th></tr></thead>
 <tbody>
 <tr><td>helpme</td><td>真正的帮助菜单</td></tr>

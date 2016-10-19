@@ -1,4 +1,4 @@
-﻿<p>世界那么大，我想去看看，你去不去？</p>
+<p>世界那么大，我想去看看，你去不去？</p>
 <p>当然要去看看了</p>
 <p style="color:red;">所有内容暂时不能下载，因为还在迁移当中。。。</p>
 <p><span>Chrome插件：</span><a href="../software/Proxy-SwitchyOmega_v2.3.16.crx.zip">SwitchyOmega_v2.3.16.crx</a></p>
