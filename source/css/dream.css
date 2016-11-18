@@ -14,7 +14,7 @@
 }
 .jx-main .jx-url-list a:hover,
 .jx-main .jx-url-list a:focus {
-	color: #23527c;
+	color: #337ab7;
 }
 /* my css */
 .jx-header {
@@ -71,6 +71,9 @@
 	margin: 0;
 	padding: 2px 5px;
 	font-size: 14px;
+}
+.jx-url-list>li>a:hover {
+	border-color: #3da9f7;
 }
 .jx-search-group .search-input-box {
 	margin-bottom: 5px;
@@ -144,6 +147,18 @@
 }
 .test-preview-mode .jx-main .jx-url-list a {
 	color: #000;
+}
+.test-preview-mode .tab-pane>.row>.clearfix {
+	position: relative;
+	top: 10px;
+	float: left;
+	height: 3px;
+	width: 100%;
+	background-color: #f00;
+}
+.test-preview-mode .tab-pane>.row>.clearfix:before,
+.test-preview-mode .tab-pane>.row>.clearfix:after {
+	content: normal !important;
 }
 /* 淡进淡出效果 */
 .fade-effect .jx-navbar a {
